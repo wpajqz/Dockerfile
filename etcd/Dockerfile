@@ -15,4 +15,4 @@ COPY --from=builder /tmp/etcd /usr/local/bin/etcd
 
 COPY --from=builder /tmp/etcdctl /usr/local/bin/etcdctl
 
-ENTRYPOINT [ "etcd" ]
+CMD [ "etcd" ]
